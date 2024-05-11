@@ -1,0 +1,22 @@
+import Head from "next/head";
+
+export default function Home() {
+  return (
+    <div>
+      <Head>
+        <title>Creating A Portfolio</title>
+        <meta name="description" content="Wowza what is a next js" />
+        <link rel="icon" href="../../app/favicon.ico" />
+      </Head>
+
+      <main>
+
+        <section className=" bg-blue-700 min-h-screen">
+
+        </section>
+
+
+      </main>
+    </div>
+  );
+}
