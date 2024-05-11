@@ -8,10 +8,10 @@ import PersonAddIcon from "@mui/icons-material/PersonAdd";
 import TrafficIcon from "@mui/icons-material/Traffic";
 import Header from "../../components/Header";
 import LineChart from "../../components/LineChart";
-// import GeoChart from "../../components/GeoChart";
-// import BarChart from "../../components/BarChart";
+import GeoChart from "../../components/GeoChart";
+import BarChart from "../../components/BarChart";
 import StatBox from "../../components/StatBox";
-// import ProgressCircle from "../../components/ProgressCircle";
+import ProgressCircle from "../../components/ProgressCircle";
 
 const Dashboard = () => {
   const theme = useTheme();
@@ -153,6 +153,7 @@ const Dashboard = () => {
                 $59,342.32
               </Typography>
             </Box>
+
             <Box>
               <IconButton>
                 <DownloadOutlinedIcon
@@ -160,11 +161,15 @@ const Dashboard = () => {
                 />
               </IconButton>
             </Box>
+
           </Box>
+
           <Box height="250px" m="-20px 0 0 0">
             <LineChart isDashboard={true} />
           </Box>
+
         </Box>
+        
         <Box
           gridColumn="span 4"
           gridRow="span 2"
@@ -217,7 +222,7 @@ const Dashboard = () => {
         </Box>
 
         {/* ROW 3 */}
-        {/* <Box
+        <Box
           gridColumn="span 4"
           gridRow="span 2"
           backgroundColor={colors.primary[400]}
@@ -242,8 +247,8 @@ const Dashboard = () => {
             </Typography>
             <Typography>Includes extra misc expenditures and costs</Typography>
           </Box>
-        </Box> */}
-        {/* <Box
+        </Box>
+        <Box
           gridColumn="span 4"
           gridRow="span 2"
           backgroundColor={colors.primary[400]}
@@ -258,8 +263,8 @@ const Dashboard = () => {
           <Box height="250px" mt="-20px">
             <BarChart isDashboard={true} />
           </Box>
-        </Box> */}
-        {/* <Box
+        </Box>
+        <Box
           gridColumn="span 4"
           gridRow="span 2"
           backgroundColor={colors.primary[400]}
@@ -275,7 +280,7 @@ const Dashboard = () => {
           <Box height="200px">
             <GeoChart isDashboard={true} />
           </Box>
-        </Box> */}
+        </Box>
       </Box>
     </Box>
   );
